@@ -18,13 +18,15 @@ This is the Springbot core used in the Domino4 eco-system.
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
 
-Connection: USB-C (preferred) or PPU V2
-
-Board: 'ESP32S2 Dev Module' - Flash Size: 4MB
-
-Using PPU: Speed: Max 460800 bps - Chose the port where your PPU is inserted.
-
-Using USB-C: USB CDC on Boot: Enabled - Chose the port where your Springbot is inserted.
+- **Connection**: USB-C (preferred) or PPU V2
+- **Board**: 'ESP32S2 Dev Module'
+ - **Flash Size**: 4MB
+- Using **PPU**:
+ - **Speed**: Max 460800 bps
+ - Chose the port where your PPU is inserted.
+- Using **USB-C**:
+ - **USB CDC on Boot**: Enabled
+ - Chose the port where your Springbot is inserted.
 
 
 Please read the notes regarding upload/transfer speed when using the [PPU](https://github.com/domino4com/PPU).
@@ -53,8 +55,8 @@ If you cannot see the port, the check out your [PPU installation](https://github
 - The Springbot comes preloaded with the UF2 bootloader. If you program the core using Arduino, you will overwrite the bootloaded. Simply follow the instructions on https://apps.springbot.co.za to re-install the bootloader.
 
 #### UF2 VID & PID
-USB_VID           0x303A
-USB_PID           0x82E4
+- **VID**:           0x303A
+- **PID**:          0x82E4
 
 ### LEDs
 #### Green only
