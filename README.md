@@ -37,7 +37,7 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |:-----------------------------:|:----:|:--:|
 | Ⓐ                | IO11 | T11|
 | Ⓑ                | IO12 | T12|
-| <img src="assets/domino4.png" width="30" style="margin:0; padding:0; display:inline-block;">          | IO13 | T13|
+|<span><img src="assets/domino4.png" width="30"></span>| IO13 | T13|
 
 #### Push Buttons on the back
 | Symbol | GPIO | Function |
