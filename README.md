@@ -77,28 +77,28 @@ If you cannot see the port, the check out your [PPU installation](https://github
 ### Other Pins
 | Function |  GPIO |Note|
 |:-----------------------------|:----:|:--|
-|  I²C SDA |5||
-|  I²C SCL |4||
-|  Serial TX |43||
-|  Serial RX |44||
-|  IO(1) pin |1||
-|  IO2 pin |9||
-|  IO3 pin |18||
-|  Buzzer |15||
-|  NTC Sensor |14||
-|  Phototransistor |16||
-|  IO3 |18||
-|  IMU Interrupt |21||
-|  NFC Interrupt |46|Only on Gold|
-|  DblTap |2||
+|  I²C SDA |IO5||
+|  I²C SCL |IO4||
+|  Serial TX |IO43||
+|  Serial RX |IO44||
+|  IO(1) pin |IO1||
+|  IO2 pin |IO9||
+|  IO3 pin |IO18||
+|  Buzzer |IO15||
+|  NTC Sensor |IO14||
+|  Phototransistor |IO16||
+|  IO3 |IO18||
+|  IMU Interrupt |IO21||
+|  NFC Interrupt |IO46|Only on Gold|
+|  DblTap |IO2||
 
 ### SPI and SD Card
 | SPI |  GPIO | 
 |:-----------------------------|:----:|
-|  MISO |37|
-|  MOSI |35|
-|  SCK  |36|
-|  SD CS|34|
+|  MISO |IO37|
+|  MOSI |IO35|
+|  SCK  |IO36|
+|  SD CS|IO34|
 
 
 ## Programming in Python.
