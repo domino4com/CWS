@@ -20,13 +20,13 @@ To program the Domino4 cores using Arduino, install the board files using the do
 
 - **Connection**: USB-C (preferred) or PPU V2
 - **Board**: 'ESP32S2 Dev Module'
- - **Flash Size**: 4MB
+  - **Flash Size**: 4MB
 - Using **PPU**:
- - **Speed**: Max 460800 bps
- - Chose the port where your PPU is inserted.
+  - **Speed**: Max 460800 bps
+  - Chose the port where your PPU is inserted.
 - Using **USB-C**:
- - **USB CDC on Boot**: Enabled
- - Chose the port where your Springbot is inserted.
+  - **USB CDC on Boot**: Enabled
+  - Chose the port where your Springbot is inserted.
 
 
 Please read the notes regarding upload/transfer speed when using the [PPU](https://github.com/domino4com/PPU).
