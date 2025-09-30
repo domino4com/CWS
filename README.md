@@ -1,8 +1,8 @@
 <img src="assets/CWS.svg" width=200 align="right">
 
 
-# CWS Core WiFi Standard
-This is the default core used in the Domino4 eco-system.
+# Springbot • CWS (Core WiFi Springbot)
+This is the springbot core used in the Domino4 eco-system.
 <table>
 <tr style="background-color:#f47521;color:#ffffff;">
 <th>Version 1</th><th>Version 2+</th>
@@ -19,17 +19,17 @@ This is the default core used in the Domino4 eco-system.
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
 
 ### Connection:
-| Version | 1 | 2+ |
+| Version | Green | Gold |
 |-----------------------------:|:----:|:--:|
 |Connection:|PPU V1|USB-C (preferred) or PPU V2|
 
 ### Settings:
-| Version | 1 |   2+ |  
+| Version | Green |   Gold |  
 |-----------------------------:|:----:|:--:|
-|Board: |'ESP32 Dev Module'|'ESP32S3 Dev Module'
+|Board: |'ESP32 Dev Module'|'ESP32S2 Dev Module'
 |Flash Size:|4MB|8MB|
 #### Using PPU
-| Version | 1 |   2+ |  
+| Version | Green |   Gold |  
 |-----------------------------:|:----:|:--:|
 |Speed:| Max 460800 bps|Max 460800 bps|
 | USB CDC on Boot: |n/a| Disabled|
@@ -38,7 +38,7 @@ To program the Domino4 cores using Arduino, install the board files using the do
 Please read the notes regarding upload/transfer speed when using the [PPU](https://github.com/domino4com/PPU).
 If you cannot see the port, the check out your [PPU installation](https://github.com/domino4com/PPU)
 #### Using USB-C
-| Version | 1 |   2+ |  
+| Version | Green |   Gold |  
 |-----------------------------:|:----:|:--:|
 |Speed:| n/a|inconsequential|
 |USB CDC on Boot: |n/a| Enabled|
@@ -46,7 +46,7 @@ If you cannot see the port, the check out your [PPU installation](https://github
 
 ## Pin Usage
 ### Buttons 
-#### Touch Buttons - Only V1
+#### Touch Buttons
 | Symbol | GPIO | T# |
 |:-----------------------------:|:----:|:--:|
 | :arrow_left:                  | IO13 | T4|
@@ -56,22 +56,22 @@ If you cannot see the port, the check out your [PPU installation](https://github
 | :white_check_mark:            | IO4  | T0|
 | :negative_squared_cross_mark: | IO14 | T6|
 | :robot:                       | IO33 | T8|
-#### Push Buttons - V2+
+#### Push Buttons
 | Symbol | GPIO | Function |
 |:-----------------------------:|:----:|:--:|
 | &#x25B6;                 | IO0 | Program |
 | &#x21BB;              | n/a | Reset |
 
-#### The V2+ buttons have special usage: 
+#### Special buttons usage: 
 - Instead of power cycle your circuit in order to restart your program, you can click the &#x21BB; button.
-- By holding down &#x25B6; and clicking &#x21BB;, you can force the ESP32S3 into PROGRAM mode. If you feel you have any issues programming the core, then try this. The <font color="#f00">&#x2600;</font> will illuminate permanently. You have to manually reset the core once programmed, by clicking &#x21BB;.
-- You can install a UF2 Bootloaded by visiting https://apps.maxiq.space
+- By holding down &#x25B6; and clicking &#x21BB;, you can force the ESP32S2 into PROGRAM mode. If you feel you have any issues programming the core, then try this. The <font color="#f00">&#x2600;</font> will illuminate permanently. You have to manually reset the core once programmed, by clicking &#x21BB;.
+- You can install a UF2 Bootloaded by visiting https://apps.springbot.co.za
 - If you use the UF2 Bootloaded to install a UF2 prepared application, then double-click on &#x21BB;.   The <font color="#f00">&#x2600;</font> will pulse.
-- The CWS V2+ core comes preloaded with the UF2 bootloader. If you program the core using Arduino, you will overwrite the bootloaded. Simply follow the instructions on https://apps.maxiq.space to re-install the bootloader.
+- The Springbot comes preloaded with the UF2 bootloader. If you program the core using Arduino, you will overwrite the bootloaded. Simply follow the instructions on https://apps.springbot.co.za to re-install the bootloader.
 
 
 ### LEDs
-#### V1
+#### Green
 | Postion | Color | GPIO | On when|
 |:-----------------------------|:----:|:--:|:--:
 |  Top |Red| IO25 | Low |
@@ -80,7 +80,7 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |  Bottom |Red| IO17 | Low |
 |  Bottom |Green| IO18 | Low |
 
-#### V2+
+#### Gold
 | Postion | Color | GPIO | On when|
 |:-----------------------------|:----:|:--:|:--:
 |  Top |Red| IO40 | High |
