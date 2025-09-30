@@ -5,7 +5,7 @@
 This is the springbot core used in the Domino4 eco-system.
 <table>
 <tr style="background-color:#f47521;color:#ffffff;">
-<th>Version 1</th><th>Version 2+</th>
+<th>Green</th><th>Gold</th>
 </tr>
 <tr style="background-color:#000;">
 <td><img src="assets/CWS_v1.png" width=300 ></td><td><img src="assets/CWS_v2.png" width=300></td>
@@ -13,15 +13,14 @@ This is the springbot core used in the Domino4 eco-system.
 <tr style="text-align: center">
 <td><a href=https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf>ESP32-WROOM-32</a></td><td><a href=https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf>ESP32-S3(FN8)</a></td>
 </tr>
+<tr style="background-color:#f47521;color:#ffffff;">
+<th>5x5 LED Array - No NFC</th><th>128x64 OLED - NFC</th>
+</tr>
 </table>
 
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
-
-### Connection:
-| Version | Green | Gold |
-|-----------------------------:|:----:|:--:|
-|Connection:|PPU V1|USB-C (preferred) or PPU V2|
+Connection: USB-C (preferred) or PPU V2
 
 ### Settings:
 | Version | Green |   Gold |  
