@@ -8,7 +8,7 @@ This is the Springbot core used in the Domino4 eco-system.
 <th>Green</th><th>Gold</th>
 </tr>
 <tr style="background-color:#000;">
-<td><img src="assets/springbot_green.svg" width=100></td><td><img src="assets/springbot_gold.svg" width=100></td>
+<td><img src="assets/springbot_green.svg" width=300></td><td><img src="assets/springbot_gold.svg" width=300></td>
 </tr>
 <tr style="background-color:#f47521;color:#ffffff;">
 <th>5x5 LED Array • :x: NFC</th><th>128x64 OLED • :white_check_mark: NFC</th>
