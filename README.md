@@ -52,6 +52,9 @@ If you cannot see the port, the check out your [PPU installation](https://github
 - If you use the UF2 Bootloaded to install a UF2 prepared application, then double-click on &#x21BB;.   The <font color="#f00">&#x2600;</font> will pulse.
 - The Springbot comes preloaded with the UF2 bootloader. If you program the core using Arduino, you will overwrite the bootloaded. Simply follow the instructions on https://apps.springbot.co.za to re-install the bootloader.
 
+#### UF2 VID & PID
+USB_VID           0x303A
+USB_PID           0x82E4
 
 ### LEDs
 #### Green only
