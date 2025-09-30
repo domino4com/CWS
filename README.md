@@ -2,7 +2,7 @@
 
 
 # Springbot • CWS (Core WiFi Springbot)
-This is the springbot core used in the Domino4 eco-system.
+This is the Springbot core used in the Domino4 eco-system.
 <table>
 <tr style="background-color:#f47521;color:#ffffff;">
 <th>Green</th><th>Gold</th>
@@ -10,55 +10,39 @@ This is the springbot core used in the Domino4 eco-system.
 <tr style="background-color:#000;">
 <td><img src="assets/CWS_v1.png" width=300 ></td><td><img src="assets/CWS_v2.png" width=300></td>
 </tr>
-<tr style="text-align: center">
-<td><a href=https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf>ESP32-WROOM-32</a></td><td><a href=https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf>ESP32-S3(FN8)</a></td>
-</tr>
 <tr style="background-color:#f47521;color:#ffffff;">
-<th>5x5 LED Array - No NFC</th><th>128x64 OLED - NFC</th>
+<th>5x5 LED Array • :x: NFC</th><th>128x64 OLED • :white_check_mark: NFC</th>
 </tr>
 </table>
 
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
+
 Connection: USB-C (preferred) or PPU V2
 
-### Settings:
-| Version | Green |   Gold |  
-|-----------------------------:|:----:|:--:|
-|Board: |'ESP32 Dev Module'|'ESP32S2 Dev Module'
-|Flash Size:|4MB|8MB|
-#### Using PPU
-| Version | Green |   Gold |  
-|-----------------------------:|:----:|:--:|
-|Speed:| Max 460800 bps|Max 460800 bps|
-| USB CDC on Boot: |n/a| Disabled|
-|Port:|Chose the port where your PPU (v1) is inserted.|Chose the port where your PPU (v2) is inserted.|
+Board: 'ESP32S2 Dev Module' - Flash Size: 4MB
+
+Using PPU: Speed: Max 460800 bps - Chose the port where your PPU is inserted.
+
+Using USB-C: USB CDC on Boot: Enabled - Chose the port where your Springbot is inserted.
+
 
 Please read the notes regarding upload/transfer speed when using the [PPU](https://github.com/domino4com/PPU).
 If you cannot see the port, the check out your [PPU installation](https://github.com/domino4com/PPU)
-#### Using USB-C
-| Version | Green |   Gold |  
-|-----------------------------:|:----:|:--:|
-|Speed:| n/a|inconsequential|
-|USB CDC on Boot: |n/a| Enabled|
-|Port:|n/a| Chose the USB-C port where your CWS is inserted.|
 
 ## Pin Usage
 ### Buttons 
 #### Touch Buttons
 | Symbol | GPIO | T# |
 |:-----------------------------:|:----:|:--:|
-| :arrow_left:                  | IO13 | T4|
-| :arrow_right:                 | IO15 | T3|
-| :arrow_up:                    | IO12 | T5|
-| :arrow_down:                  | IO27 | T7|
-| :white_check_mark:            | IO4  | T0|
-| :negative_squared_cross_mark: | IO14 | T6|
-| :robot:                       | IO33 | T8|
-#### Push Buttons
+| Ⓐ                | IO11 | T11|
+| Ⓑ                | IO12 | T12|
+| Logo              | IO13 | T13|
+
+#### Push Buttons on the back
 | Symbol | GPIO | Function |
 |:-----------------------------:|:----:|:--:|
-| &#x25B6;                 | IO0 | Program |
+| &#x25B6;              | IO0 | Program |
 | &#x21BB;              | n/a | Reset |
 
 #### Special buttons usage: 
@@ -71,39 +55,48 @@ If you cannot see the port, the check out your [PPU installation](https://github
 
 ### LEDs
 #### Green
-| Postion | Color | GPIO | On when|
-|:-----------------------------|:----:|:--:|:--:
-|  Top |Red| IO25 | Low |
-|  Top |Blue| IO26 | Low |
-|  Middle |Yellow| IO19 | High |
-|  Bottom |Red| IO17 | Low |
-|  Bottom |Green| IO18 | Low |
+| Postion | GPIO | 
+|:-----------------------------|:----:|
+|  Row 1 |IO8 |
+|  Row 2 |IO40 |
+|  Row 3 |IO10 |
+|  Row 4 |IO38 |
+|  Row 5 |IO33 |
+|  Column 1 |IO3 |
+|  Column 2 |IO42 |
+|  Column 3 |IO41 |
+|  Column 4 |IO6 |
+|  Column 5 |IO7 |
 
-#### Gold
-| Postion | Color | GPIO | On when|
-|:-----------------------------|:----:|:--:|:--:
-|  Top |Red| IO40 | High |
-|  Bottom |RGB| IO39 | Neopixel |
+#### Green & Gold on the back
+| Postion | GPIO | 
+|:-----------------------------|:----:|
+|  Neopixel | IO39 | 
+|  Red | IO17 | 
 
 ### Other Pins
-| Function |  GPIO V1 |GPIO V2+ | Notes|
-|:-----------------------------|:----:|:----:|:--|
-|  I²C SDA |21|17||
-|  I²C SCL |22|18 ||
-|  Serial TX |1|43 ||
-|  Serial RX |3|44 ||
-|  IO pin |2|1 |When used for capacitative sensing, refer to T2|
-| DblTap |n/a|2|
+| Function |  GPIO |
+|:-----------------------------|:----:|
+|  I²C SDA |5|
+|  I²C SCL |4|
+|  Serial TX |43|
+|  Serial RX |44|
+|  IO(1) pin |1|
+|  DblTap |2|
+|  NTC Sensor |14|
+|  Buzzer |15|
+|  Phototransistor |16|
+|  IO3 |18|
+|  IMU Interrupt |21|
+|  NFC Interrupt |46|
 
-### Expansion port (V2+ only)
-| SPI |  GPIO | MMC | 
-|:-----------------------------|:----:|:--|
-|  MISO |38|DAT0|
-|  MOSI |37|CMD |
-|  SCK  |36|CLK |
-|  X1   |35|DAT3 |
-|  X2   |34|DAT1 |
-|  X3   |33|DAT2 |
+### SPI and SD Card
+| SPI |  GPIO | 
+|:-----------------------------|:----:|
+|  MISO |37|
+|  MOSI |35|
+|  SCK  |36|
+|  SD CS|34|
 
 
 ## Programming in Python.
