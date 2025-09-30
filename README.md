@@ -8,7 +8,7 @@ This is the Springbot core used in the Domino4 eco-system.
 <th>Green</th><th>Gold</th>
 </tr>
 <tr style="background-color:#000;">
-<td><img src="assets/CWS_v1.png" width=300 ></td><td><img src="assets/CWS_v2.png" width=300></td>
+<td><img src="assets/CWS_Green.png" width=300 ></td><td><img src="assets/CWS_Gold.png" width=300></td>
 </tr>
 <tr style="background-color:#f47521;color:#ffffff;">
 <th>5x5 LED Array • :x: NFC</th><th>128x64 OLED • :white_check_mark: NFC</th>
@@ -54,7 +54,7 @@ If you cannot see the port, the check out your [PPU installation](https://github
 
 
 ### LEDs
-#### Green
+#### Green only
 | Postion | GPIO | 
 |:-----------------------------|:----:|
 |  Row 1 |IO8 |
@@ -75,20 +75,22 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |  Red | IO17 | 
 
 ### Other Pins
-| Function |  GPIO |
-|:-----------------------------|:----:|
-|  I²C SDA |5|
-|  I²C SCL |4|
-|  Serial TX |43|
-|  Serial RX |44|
-|  IO(1) pin |1|
-|  DblTap |2|
-|  NTC Sensor |14|
-|  Buzzer |15|
-|  Phototransistor |16|
-|  IO3 |18|
-|  IMU Interrupt |21|
-|  NFC Interrupt |46|
+| Function |  GPIO |Note|
+|:-----------------------------|:----:|:--|
+|  I²C SDA |5||
+|  I²C SCL |4||
+|  Serial TX |43||
+|  Serial RX |44||
+|  IO(1) pin |1||
+|  IO2 pin |9||
+|  IO3 pin |18||
+|  Buzzer |15||
+|  NTC Sensor |14||
+|  Phototransistor |16||
+|  IO3 |18||
+|  IMU Interrupt |21||
+|  NFC Interrupt |46|Only on Gold|
+|  DblTap |2||
 
 ### SPI and SD Card
 | SPI |  GPIO | 
