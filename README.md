@@ -15,12 +15,16 @@ This is the Springbot core used in the Domino4 eco-system.
 </tr>
 </table>
 
+## On board sensors
+- X/Y/Z **Accelerometer** [Kionix **KX022-1022**](https://fscdn.rohm.com/kionix/en/datasheet/KX022-1020%20Specifications%20Rev%2012.0.pdf) on I2C Address **0x1F** (Interupt 1 on IO21)
+- **Temperature & Humidity** Sensor [Asair **AHT20**](https://asairsensors.com/wp-content/uploads/2021/09/Data-Sheet-AHT20-Humidity-and-Temperature-Sensor-ASAIR-V1.0.03.pdf) on I2C Address **0x38**
+
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
 
 - **Connection**: USB-C (preferred) or PPU V2
-- **Board**: 'ESP32S2 Dev Module'
-  - **Flash Size**: 4MB
+- **Board**: 'ESP32S3 Dev Module'
+  - **Flash Size**: 8MB
 - Using **PPU**:
   - **Speed**: Max 460800 bps
   - Chose the port where your PPU is inserted.
@@ -63,21 +67,21 @@ If you cannot see the port, the check out your [PPU installation](https://github
 | Postion | GPIO | 
 |:-----------------------------|:----:|
 |  Row 1 |IO8 |
-|  Row 2 |IO40 |
+|  Row 2 |IO17 |
 |  Row 3 |IO10 |
 |  Row 4 |IO38 |
-|  Row 5 |IO33 |
+|  Row 5 |IO6 |
 |  Column 1 |IO3 |
-|  Column 2 |IO42 |
-|  Column 3 |IO41 |
-|  Column 4 |IO6 |
-|  Column 5 |IO7 |
+|  Column 2 |IO2 |
+|  Column 3 |IO14 |
+|  Column 4 |IO15 |
+|  Column 5 |IO16 |
 
 #### Green & Gold on the back
 | Postion | GPIO | 
 |:-----------------------------|:----:|
 |  Neopixel | IO39 | 
-|  Red | IO17 | 
+|  Red | IO40 | 
 
 ### Other Pins
 | Function |  GPIO |Note|
@@ -89,22 +93,23 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |  IO(1) pin |IO1||
 |  IO2 pin |IO9||
 |  IO3 pin |IO18||
-|  Buzzer |IO15||
-|  NTC Sensor |IO14||
-|  Phototransistor |IO16||
+|  Buzzer |IO33||
+|  Phototransistor |IO7||
 |  IO3 |IO18||
 |  IMU Interrupt |IO21||
-|  NFC Interrupt |IO46|Only on Gold|
-|  DblTap |IO2||
+|  NFC Interrupt |IO41|Only on Gold|
+|  DblTap |IO42||
 
 ### SPI and SD Card
-| SPI |  GPIO | 
-|:-----------------------------|:----:|
-|  MISO |IO37|
-|  MOSI |IO35|
-|  SCK  |IO36|
-|  SD CS|IO34|
-
+| SPI |  GPIO | MMC (Only on Gold) |
+|:-----------------------------|:----:|:----:|
+|  MISO |IO37|DAT0|
+|  MOSI |IO35|CMD|
+|  SCK  |IO36|CLK|
+|  SD CS|IO34|DAT3|
+| ... |IO16 | DAT1|
+| ... |IO15 | DAT2|
+| ... |IO3 | Card Detect|
 
 ## Programming in Python.
 - Download the MicroPython firmware from [micropython.org](https://micropython.org/download/esp32/)
