@@ -54,7 +54,7 @@ If you cannot see the port, the check out your [PPU installation](https://github
 
 #### Special buttons usage: 
 - Instead of power cycle your circuit in order to restart your program, you can click the &#x21BB; button.
-- By holding down &#x25B6; and clicking &#x21BB;, you can force the ESP32S2 into PROGRAM mode. If you feel you have any issues programming the core, then try this. The <font color="#f00">&#x2600;</font> will illuminate permanently. You have to manually reset the core once programmed, by clicking &#x21BB;.
+- By holding down &#x25B6; and clicking &#x21BB;, you can force the ESP32S3 into PROGRAM mode. If you feel you have any issues programming the core, then try this. The <font color="#f00">&#x2600;</font> will illuminate permanently. You have to manually reset the core once programmed, by clicking &#x21BB;.
 - You can install a UF2 Bootloaded by visiting https://apps.springbot.co.za
 - If you use the UF2 Bootloaded to install a UF2 prepared application, then double-click on &#x21BB;.   The <font color="#f00">&#x2600;</font> will pulse.
 - The Springbot comes preloaded with the UF2 bootloader. If you program the core using Arduino, you will overwrite the bootloaded. Simply follow the instructions on https://apps.springbot.co.za to re-install the bootloader.
