@@ -16,8 +16,9 @@ This is the Springbot core used in the Domino4 eco-system.
 </table>
 
 ## On board sensors
-- X/Y/Z **Accelerometer** [Kionix **KX022-1022**](https://fscdn.rohm.com/kionix/en/datasheet/KX022-1020%20Specifications%20Rev%2012.0.pdf) on I2C Address **0x1F** (Interupt 1 on IO21)
-- **Temperature & Humidity** Sensor [Asair **AHT20**](https://asairsensors.com/wp-content/uploads/2021/09/Data-Sheet-AHT20-Humidity-and-Temperature-Sensor-ASAIR-V1.0.03.pdf) on I2C Address **0x38**
+- Digital X/Y/Z **Accelerometer** [Kionix **KX022-1022**](https://fscdn.rohm.com/kionix/en/datasheet/KX022-1020%20Specifications%20Rev%2012.0.pdf) on I2C Address **0x1F** (Interupt 1 on IO21)
+- Digital **Temperature & Humidity** Sensor [Asair **AHT20**](https://asairsensors.com/wp-content/uploads/2021/09/Data-Sheet-AHT20-Humidity-and-Temperature-Sensor-ASAIR-V1.0.03.pdf) on I2C Address **0x38**
+- Analog **Light** Sensor using **ADC1 Channel 6** on IO7 (Resolution: 12-bit (0–4095))
 
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
@@ -94,11 +95,11 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |  IO2 pin |IO9||
 |  IO3 pin |IO18||
 |  Buzzer |IO33||
-|  Phototransistor |IO7||
+|  Phototransistor |IO7|ADC1 Channel 6|
 |  IO3 |IO18||
-|  IMU Interrupt |IO21||
+|  IMU Interrupt |IO21|Interrupt #1 on the IMU|
 |  NFC Interrupt |IO41|Only on Gold|
-|  DblTap |IO42||
+|  DblTap |IO42|Used in conjuction with .uf2 boot loader|
 
 ### SPI and SD Card
 | SPI |  GPIO | MMC (Only on Gold) |
