@@ -22,7 +22,7 @@ This is the Springbot core used in the Domino4 eco-system.
 
 ## I2C Addresses in use
 | I²C address | Chip / function | Green | Gold |
-|-------------|-----------------|:---:|:---:|
+|:---:-----------------|:---:|:---:|
 | 0x1F        | KX022-1020 accelerometer |:white_check_mark:|:white_check_mark:|
 | 0x38        | AHT20 / AHT21 temperature & humidity sensor |:white_check_mark:|:white_check_mark:|
 | 0x3C        | SSD1306 OLED display |:white_check_mark:|:white_check_mark:|
