@@ -20,6 +20,16 @@ This is the Springbot core used in the Domino4 eco-system.
 - Digital **Temperature & Humidity** Sensor [Asair **AHT20**](https://asairsensors.com/wp-content/uploads/2021/09/Data-Sheet-AHT20-Humidity-and-Temperature-Sensor-ASAIR-V1.0.03.pdf) on I2C Address **0x38**
 - Analog **Light** Sensor using **ADC1 Channel 6** on IO7 (Resolution: 12-bit (0–4095))
 
+## I2C Addresses in use
+| I²C address | Chip / function | Green | Gold |
+|-------------|-----------------|:---:|:---:|
+| 0x1F        | KX022-1020 accelerometer |:white_check_mark:|:white_check_mark:|
+| 0x38        | AHT20 / AHT21 temperature & humidity sensor |:white_check_mark:|:white_check_mark:|
+| 0x3C        | SSD1306 OLED display |:white_check_mark:|:white_check_mark:|
+| 0x2D        | ST25DV NFC tag (secondary / special function address) |:x:|:white_check_mark:|
+| 0x53        | ST25DV NFC tag – user EEPROM memory |:x:|:white_check_mark:|
+| 0x57        | ST25DV NFC tag – system/configuration & UID area |:x:|:white_check_mark:|
+
 ## Programming in Arduino
 To program the Domino4 cores using Arduino, install the board files using the doumentation from [Espressif](https://github.com/espressif/arduino-esp32)
 
