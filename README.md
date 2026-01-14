@@ -25,7 +25,7 @@ This is the Springbot core used in the Domino4 eco-system.
 |:---:|-----------------|:---:|:---:|
 | 0x1F        | KX022-1020 accelerometer |:white_check_mark:|:white_check_mark:|
 | 0x38        | AHT20 / AHT21 temperature & humidity sensor |:white_check_mark:|:white_check_mark:|
-| 0x3C        | SSD1306 OLED display |:white_check_mark:|:white_check_mark:|
+| 0x3C        | SSD1306 OLED display  |:x:|:white_check_mark:|
 | 0x2D        | ST25DV NFC tag (secondary / special function address) |:x:|:white_check_mark:|
 | 0x53        | ST25DV NFC tag – user EEPROM memory |:x:|:white_check_mark:|
 | 0x57        | ST25DV NFC tag – system/configuration & UID area |:x:|:white_check_mark:|
