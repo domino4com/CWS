@@ -106,7 +106,6 @@ If you cannot see the port, the check out your [PPU installation](https://github
 |  IO3 pin |IO18||
 |  Buzzer |IO33||
 |  Phototransistor |IO7|ADC1 Channel 6|
-|  IO3 |IO18||
 |  IMU Interrupt |IO21|Interrupt #1 on the IMU|
 |  NFC Interrupt |IO41|Only on Gold|
 |  DblTap |IO42|Used in conjuction with .uf2 boot loader|
