@@ -16,7 +16,7 @@ This is the Springbot core used in the Domino4 eco-system.
 </table>
 
 ## On board sensors
-- Digital X/Y/Z **Accelerometer** [Kionix **KX022-1022**](https://fscdn.rohm.com/kionix/en/datasheet/KX022-1020%20Specifications%20Rev%2012.0.pdf) on I2C Address **0x1F** (Interupt 1 on IO21)
+- Digital X/Y/Z **Accelerometer** [Kionix **KX022-1022**](https://fscdn.rohm.com/kionix/en/datasheet/KX022-1020%20Specifications%20Rev%2012.0.pdf) on I2C Address **0x1F** (Interrupt 1 on IO21)
 - Digital **Temperature & Humidity** Sensor [Asair **AHT20**](https://asairsensors.com/wp-content/uploads/2021/09/Data-Sheet-AHT20-Humidity-and-Temperature-Sensor-ASAIR-V1.0.03.pdf) on I2C Address **0x38**
 - Analog **Light** Sensor using **ADC1 Channel 6** on IO7 (Resolution: 12-bit (0–4095))
 
