@@ -128,15 +128,15 @@ If you cannot see the port, the check out your [PPU installation](https://github
 | P1      |  IO9  |        IO2        | TOUCH9, ADC1_CH8  |
 | P2      | IO18  |        IO3        |  U1RXD, ADC2_CH7  |
 | ~~P3~~  |  nc   | ~~not connected~~ |                   |
-| P4      |  IO0  |       PROG        |                   |
+| ~~P4~~  |  nc   | ~~not connected~~ |                   |
 | ~~P5~~  |  nc   | ~~not connected~~ |                   |
 | P6      | IO41  |        IRQ        |                   |
-| P7      | IO44  |        RXD        |                   |
-| P8      | RESET |       RESET       |                   |
+| P7      | Reset |       Reset       |                   |
+| P8      | IO44  |        RXD        |                   |
 | ~~P9~~  |  nc   | ~~not connected~~ |                   |
 | ~~P10~~ |  nc   | ~~not connected~~ |                   |
 | ~~P11~~ |  nc   | ~~not connected~~ |                   |
-| ~~P12~~ |  nc   | ~~not connected~~ |                   |
+| P12     |  IO0  |       PROG        |                   |
 | P13     | IO36  |      SPI SCK      |                   |
 | P14     | IO37  |     SPI MISO      |                   |
 | P15     | IO35  |     SPI MOSI      |                   |
