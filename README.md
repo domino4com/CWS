@@ -122,29 +122,27 @@ If you cannot see the port, the check out your [PPU installation](https://github
 | ...   |  IO3  |    Card Detect     |
 
 ### micro:bit connector
-| Pin     | GPIO  |   Main Function   | ESP32-S3 Function |
-| :------ | :---: | :---------------: | :---------------: |
-| P0      |  IO1  |        IO1        | TOUCH1, ADC1_CH0  |
-| P1      |  IO9  |        IO2        | TOUCH9, ADC1_CH8  |
-| P2      | IO18  |        IO3        |  U1RXD, ADC2_CH7  |
-| ~~P3~~  |  nc   | ~~not connected~~ |                   |
-| ~~P4~~  |  nc   | ~~not connected~~ |                   |
-| ~~P5~~  |  nc   | ~~not connected~~ |                   |
-| P6      | IO41  |        IRQ        |                   |
-| P7      | Reset |       Reset       |                   |
-| P8      | IO44  |        RXD        |                   |
-| ~~P9~~  |  nc   | ~~not connected~~ |                   |
-| ~~P10~~ |  nc   | ~~not connected~~ |                   |
-| ~~P11~~ |  nc   | ~~not connected~~ |                   |
-| P12     |  IO0  |       PROG        |                   |
-| P13     | IO36  |      SPI SCK      |                   |
-| P14     | IO37  |     SPI MISO      |                   |
-| P15     | IO35  |     SPI MOSI      |                   |
-| P16     | IO43  |        TXD        |                   |
-| ~~P17~~ |  na   | ~~not available~~ |                   |
-| ~~P18~~ |  na   | ~~not available~~ |                   |
-| P19     |  IO4  |      I²C SCL      | TOUCH4, ADC1_CH3  |
-| P20     |  IO5  |      I²C SDA      | TOUCH5, ADC1_CH4  |
+| Pin     | GPIO  |   Main Function   | ESP32-S3 Function |        V1.7        |
+| :------ | :---: | :---------------: | :---------------: | :----------------: |
+| P0      |  IO1  |        IO1        | TOUCH1, ADC1_CH0  | :white_check_mark: |
+| P1      |  IO9  |        IO2        | TOUCH9, ADC1_CH8  | :white_check_mark: |
+| P2      | IO18  |        IO3        |  U1RXD, ADC2_CH7  | :white_check_mark: |
+| ~~P3~~  |  nc   | ~~not connected~~ |                   |        :x:         |
+| ~~P4~~  |  nc   | ~~not connected~~ |                   |        :x:         |
+| ~~P5~~  |  nc   | ~~not connected~~ |                   |        :x:         |
+| P6      | IO41  |        IRQ        |                   | :white_check_mark: |
+| P7      |  nc   | ~~not connected~~ |                   |        :x:         |
+| P8      | IO44  |        RXD        |                   | :white_check_mark: |
+| ~~P9~~  |  nc   | ~~not connected~~ |                   |        :x:         |
+| ~~P10~~ |  nc   | ~~not connected~~ |                   |        :x:         |
+| ~~P11~~ |  nc   | ~~not connected~~ |                   |        :x:         |
+| P12     |  nc   | ~~not connected~~ |                   |        :x:         |
+| P13     | IO36  |      SPI SCK      |                   | :white_check_mark: |
+| P14     | IO37  |     SPI MISO      |                   | :white_check_mark: |
+| P15     | IO35  |     SPI MOSI      |                   | :white_check_mark: |
+| P16     | IO43  |        TXD        |                   | :white_check_mark: |
+| P19     |  IO4  |      I²C SCL      | TOUCH4, ADC1_CH3  | :white_check_mark: |
+| P20     |  IO5  |      I²C SDA      | TOUCH5, ADC1_CH4  | :white_check_mark: |
 
 
 ## Programming in Python.
